@@ -2,7 +2,7 @@
 
 ## Preview
 
-[![Demo Preview](https://github.com/ValeedAnjum/scrolling-based-progressbar-demo/blob/master/public/Anjum.gif?raw=true)](https://progressbar-demo.netlify.com/)
+[![Demo Preview](https://github.com/ValeedAnjum/twilio/blob/master/client/public/twilio.jpg)]
 
 ## Usage
 
