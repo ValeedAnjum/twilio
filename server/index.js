@@ -15,17 +15,20 @@ app.get("/", (req, res) => {
 });
 
 app.get("/send", (req, res) => {
+  const { recipient, textmessage } = req.query;
   client.messages
     .create({
       from: "+17089984142",
-      body: "I am khan body",
-      to: "+923016405051",
+      body: textmessage,
+      to: `+${recipient}`,
     })
-    .then((res) => {
-      console.log(res);
+    .then((msg) => {
+      console.log(msg);
+      res.json(msg);
     })
     .catch((err) => {
       console.log(err);
+      res.json(err);
     });
 });
 
